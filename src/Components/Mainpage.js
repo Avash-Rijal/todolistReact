@@ -11,7 +11,7 @@ const Mainpage = () => {
       <NavBar></NavBar>
       <div className="todo_container">
         Your Todo: <br></br>
-        {todoList && todoList.length > 1 ? (
+        {todoList && todoList.length > 0 ? (
           <>
             {todoList.map((value, index) => (
               <div className="single_todo">
