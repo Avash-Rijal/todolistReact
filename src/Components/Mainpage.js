@@ -11,7 +11,7 @@ const Mainpage = () => {
       <NavBar></NavBar>
       <div className="todo_container">
         Your Todo: <br></br>
-        {localStorage.getItem("todo") ? (
+        {todoList && todoList.length > 1 ? (
           <>
             {todoList.map((value, index) => (
               <div className="single_todo">
